@@ -13,7 +13,8 @@ def generate_graph(V, E):
        if not G.has_edge(edge[1], edge[0]):
           w = random.randint(1, 10)    
           G.add_edge(edge[0], edge[1], weight=w)
-   return G
+   return G
+
 def generate_graph_with_edges(V, E):
    G = nx.Graph()
    for i in range(V):

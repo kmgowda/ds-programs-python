@@ -11,7 +11,8 @@ def generate_graph(V, E):
    for i in range(E):
        edges = random.sample(nodes,2)
        G.add_edge(edges[0], edges[1])
-   return G
+   return G
+
 def create_adjaceny_list(G):
     N = nx.number_of_nodes(G)
     adlist = list()
